@@ -98,6 +98,9 @@ var email = "";                           // OPTIONAL: If "emailSummary" is set 
 var defaultMaxRetries = 10; // Maximum number of retries for api functions (with exponential backoff)
 
 function install(){
+  //Per-environment variable overrides defined in _LocalSettings.gs
+  configure_local_settings(); 
+
   //Delete any already existing triggers so we don't create excessive triggers
   deleteAllTriggers();
 
@@ -130,6 +133,9 @@ var modifiedEvents = [];
 var removedEvents = [];
 
 function startSync(){
+  //Per-environment variable overrides defined in _LocalSettings.gs
+  configure_local_settings(); 
+
   if (PropertiesService.getUserProperties().getProperty('LastRun') > 0 && (new Date().getTime() - PropertiesService.getUserProperties().getProperty('LastRun')) < 360000) {
     Logger.log("Another iteration is currently running! Exiting...");
     return;
