@@ -17,3 +17,9 @@ function configure_local_settings(){
 }
 ```
 
+If `_LocalSettings.gs` is not properly ignored then prevent it from being pushed back up to remote repos using:
+
+```
+git update-index --assume-unchanged _LocalSettings.gs
+```
+
