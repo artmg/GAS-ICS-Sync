@@ -1,4 +1,4 @@
-# Deploy with Clasp
+# Install using Clasp
 
 Clasp is the [command line utility for Google Apps Script](https://developers.google.com/apps-script/guides/clasp). See this [quick guide to installing Clasp](https://github.com/artmg/cooking-with-GAS#installing-clasp).
 
