@@ -1,5 +1,5 @@
 {
-  "timeZone": "GMT",
+  "timeZone": "Etc/GMT",
   "dependencies": {
     "enabledAdvancedServices": [{
       "userSymbol": "Tasks",
